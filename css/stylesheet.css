@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+
+.nav{
+    background-color: #333;
+} 
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer{
+    display: flex;
+    margin-top: auto; 
+    background-color: #333;
+    color: #fff;
+  }
