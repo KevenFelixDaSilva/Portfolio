@@ -1,32 +1,131 @@
-header{
-  background-color: rgba(94, 92, 92, 0.521);
-  position: fixed;
-  top: 0%;
-  left: 0%;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+header {
+  background: #0e0e0e;
+  padding: 30px;
+}
+
+body {
+  min-height: 100vh;
+  background: #161616 !important;
+  color: #ffffff !important;
+  overflow-x: hidden;
+}
+
+a {
+  color: white !important;
+}
+
+#section-2 {
+  position: relative;
+  padding: 100px;
+}
+
+#section-3 {
+  position: relative;
+  padding: 100px;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+}
+
+#neon-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #a70000;
+  border: 5px solid #a70000;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 16px;
+  font-family: "Itim", coursive !important;
+
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 29px #a70000;
+
+  box-shadow: inset 0 0 32px #a70000, 0 0 32px #a70000;
+
+  position: relative;
+}
+
+#neon-btn::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
   width: 100%;
+  height: 100%;
+  background-color: #a70000;
+  left: 0;
+  top: 120%;
+
+  transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+  filter: blur(64px);
+  opacity: 0.7;
 }
 
-.nav{
-  padding: 25px;
+#neon-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a70000;
+  box-shadow: 0 0 128px 20px #a70000;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 100ms linear;
 }
 
-a{
-  list-style: none;
-  font-size: 1.2rem;
-  color: black;
+#neon-btn:hover::after,
+#neon-btn:focus::after {
+  opacity: 1;
 }
 
-.card, .border{
-  margin: 100px;
+#neon-btn:hover::before,
+#neon-btn:focus::before {
+  opacity: 1;
 }
 
-.border{
-  border-radius: 50px;
+#neon-btn:hover,
+#neon-btn:focus {
+  color: #202631;
+  text-shadow: none;
 }
 
-footer{
-    display: flex;
-    margin-top: auto; 
-    background-color: #333;
-    padding: 50px;
-  }
+.custom-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.nav a {
+  padding: 6px 15px;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+
+.nav a:hover,
+.nav a.active{
+  background: #a70000;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #a70000, #ffffff) !important;
+  color: transparent !important;
+  background-clip: text !important;
+  display: inline-block !important;
+}
+
+.gradient-text-black {
+  background-image: linear-gradient(to right, #000000, #a70000) !important;
+  color: transparent !important;
+  background-clip: text !important;
+  display: inline-block !important;
+}
