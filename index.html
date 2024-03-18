@@ -16,15 +16,32 @@
 </head>
 
 <body>
-  <header class="d-flex justify-content-between align-items-center fixed-top">
-    <h2 href="#section-1">Portfolio</h2>
-    <nav class="nav">
-      <a class="nav-link active" href="#section-1">Inicio</a>
-      <a class="nav-link" href="#section-2">Sobre</a>
-      <a class="nav-link" href="#section-3">Tecnologias</a>
-      <a class="nav-link" href="#section-4">Projetos</a>
+  <header class="fixed-top">
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#section-1" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#section-2" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#section-3" class="nav-link"> Tecnologias</a></li>
+                <li class="nav-item"><a href="#section-4" class="nav-link">Projetos</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="images/menu.svg"  height="50px"></button>
+        </div>
     </nav>
-  </header>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="#section-1" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#section-2" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="#section-3" class="nav-link">Tecnologias</a></li>
+            <li class="nav-item"><a href="#section-4" class="nav-link">Projetos</a></li>
+        </ul>
+    </div>
+</header>
   <div class="d-flex justify-content-center align-items-center vh-100" id="section-1">
     <div class="gradient-text" data-aos="fade-dowm" data-aos-delay="200" data-aos-duration="2000">
       <h1>Oi, eu sou o Keven Felix</h1>
@@ -38,10 +55,10 @@
       data-aos-duration="3000">
       <h1 class="gradient-text">Sobre mim</h1>
     </div>
-    <div class="d-flex justify-content-center align-items-center my-5 py-5">
+    <div class="d-flex justify-content-center align-items-center flex-wrap my-5 py-5">
       <img src="images/Perfil (2).png" alt="" class="rounded-circle m-5" height="300px" width="300px"
         data-aos="fade-left" data-aos-delay="200" data-aos-duration="3000">
-      <P class="text-sm-start fs-5 m-5" data-aos="fade-left" data-aos-delay="200" data-aos-duration="3000">
+      <P class="text-sm-start fs-5 m-5 " data-aos="fade-left" data-aos-delay="200" data-aos-duration="3000">
         <b class="fs-1">Keven Felix da Silva</b><br>
         💻 Desenvolvedor Back-end<br>
         🎓 Técnico em desenvolvimento de software<br>
@@ -340,7 +357,7 @@
       </div>
     </div>
   </div>
-  <div class="container" id="section-4">
+  <div class="container text-center" id="section-4">
     <div class="border-bottom border-black border-opacity-50 text-center m-5" data-aos="fade-up" data-aos-delay="200"
       data-aos-duration="2000">
       <h1 class="gradient-text">Projetos em destaque</h1>
