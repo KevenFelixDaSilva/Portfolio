@@ -10,4 +10,4 @@ O portfolio tem a intenção de mostra um pouco sobre mim, como, quais técnolog
 e falo um pouco sobre quem sou.
 
 ## Deploy
-![Deploy](https://portfolio-pessoal-keven.netlify.app/)
+[Deploy](https://portfolio-pessoal-keven.netlify.app/)
